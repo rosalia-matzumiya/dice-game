@@ -105,6 +105,8 @@ document.getElementById('buttonRoll').addEventListener('click', function () {
     //toggle visibility of popup
     setTimeout(function () {
       document.getElementById('popUp').hidden = false;
+      var audioWin = document.getElementById("popup__audio");
+      audioWin.play();
     }, 300);
   }
   //play audio

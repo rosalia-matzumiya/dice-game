@@ -29,10 +29,9 @@
     </div>
     <main>
       <section class="player player--0 player--active">
-        <div class="container a-kirby">
-          <div class="avatar">
+        <div class="container">
+          <div class="avatar a-kirby">
             <img src="img/dice-game/kirby.png" alt="Kirby" />
-            </a>
           </div>
           <h2 class="name" id="name--0">Player</h2>
           <h3 class="round">Round</h3>
@@ -54,12 +53,12 @@
               <p class="score--total total-score" id="playerOneTotal">0</p>
             </div>
           </div>
+        </div>
       </section>
       <section class="player player--1">
         <div class="container">
           <div class="avatar a-meta">
             <img src="img/dice-game/meta-knight.png" alt="Meta Knight" />
-            </a>
           </div>
           <h2 class="name" id="name--1">Computer</h2>
           <h3 class="round">Round</h3>
@@ -82,18 +81,19 @@
               <p class="score--total total-score" id="playerTwoTotal">0</p>
             </div>
           </div>
+        </div>
       </section>
       <audio id="dice__audio">
         <source src="sounds/dice-sound.mp3" type="audio/mp3">
       </audio>
       <div class="btn--container">
-        <button class="btn btn--new" id="newGame">
-
-          &#128257; New game</button>
+        <button class="btn btn--new" id="newGame">&#128257; New game</button>
         <button class="btn btn--roll" id="buttonRoll">&#127922; Roll dice</button>
         <a class="btn btn--exit" href="index.html">&#127939; Exit</a>
       </div>
-
+      <audio id="popup__audio">
+        <source src="sounds/win-sound.mp3" type="audio/mp3">
+      </audio>
       <div class="popUp" id="popUp" hidden>
         <div class="popUpContainer">
           <h1 id="winner">Winner</h1>

@@ -1145,9 +1145,6 @@ body {
   flex-direction: row;
   justify-content: center;
 }
-#game--board .player .dice--container > {
-  flex: 1 0 50%;
-}
 #game--board .player .dice--container:first-child {
   flex: 0 1 50%;
 }

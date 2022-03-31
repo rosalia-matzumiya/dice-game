@@ -1114,10 +1114,6 @@ body {
                     flex-direction: row;
                     justify-content: center;
 
-                    > {
-                        flex: 1 0 50%;
-                    }
-
                     &:first-child {
                         flex: 0 1 50%;
                     }

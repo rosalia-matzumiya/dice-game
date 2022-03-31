@@ -69,9 +69,8 @@
           </div>
         </div>
       </section>
-      <audio preload="true" id="dice__audio">
+      <audio id="dice__audio">
         <source src="sounds/dice-sound.mp3" type="audio/mp3">
-        </source>
       </audio>
       <div class="btn--container">
         <button class="btn btn--new" id="newGame">
@@ -83,7 +82,7 @@
 
       <div class="popUp" id="popUp" hidden>
         <div class="popUpContainer">
-          <h1 id="winner"></h1>
+          <h1 id="winner">Winner</h1>
           <h3>Player Score: <span id="playerScore"></span></h3>
           <h3>Computer Score: <span id="computerScore"></span></h3>
           <button class="btn" id="playAgain">&#128258; Play Again</button>

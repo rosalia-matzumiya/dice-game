@@ -31,10 +31,16 @@ function rollDice() {
   return (playerOneRoundTotal, playerTwoRoundTotal);
 }
 
-//Roll Single Die
+//Roll One Die
 function rollDie() {
   var roll = Math.floor(Math.random() * 6);
   return roll;
+}
+
+//Add sound effect to dice
+function diceSoundEffect() {
+  var audio = document.getElementById("dice__audio");
+  audio.play();
 }
 
 // Calculate score function
@@ -54,6 +60,7 @@ function calculateScore(value1, value2) {
 document.getElementById('buttonRoll').addEventListener('click', function () {
   rollCount++;
   rollDice();
+
   //Set player totals
   playerOneTotal = playerOneTotal + playerOneRoundTotal;
   playerTwoTotal = playerTwoTotal + playerTwoRoundTotal;
@@ -82,6 +89,9 @@ document.getElementById('buttonRoll').addEventListener('click', function () {
       document.getElementById('popUp').hidden = false;
     }, 300);
   }
+  //play audio
+  diceSoundEffect();
+
 });
 //Event listeners to start new game
 document.getElementById('newGame').addEventListener('click', function () {
@@ -90,3 +100,5 @@ document.getElementById('newGame').addEventListener('click', function () {
 document.getElementById('playAgain').addEventListener('click', function () {
   location.reload();
 });
+
+

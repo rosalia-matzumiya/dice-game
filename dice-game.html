@@ -3,9 +3,10 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link type="text/css" rel="stylesheet" href="css/main.css">
-  <script src="script/dice_game.js" defer></script>
+  <link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico">
   <title>COMP2132 - Stellar Dice</title>
 </head>
 
@@ -63,6 +64,10 @@
           </div>
         </div>
       </section>
+      <audio preload="true" id="dice__audio">
+        <source src="sounds/dice-sound.mp3" type="audio/mp3">
+        </source>
+      </audio>
       <div class="btn--container">
         <button class="btn btn--new" id="newGame">
 
@@ -82,7 +87,7 @@
     </main>
 
   </div>
-
+  <script src="script/dice_game.js"></script>
 </body>
 
 </html>

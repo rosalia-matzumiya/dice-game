@@ -1,0 +1,29 @@
+@mixin lg {
+  @media screen and (max-width: 1919px) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media screen and (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media screen and (max-width: 799px) {
+    @content;
+  }
+}
+
+@mixin xs {
+  @media screen and (max-width: 512px) {
+    @content;
+  }
+}
+
+@mixin rounded-shaded-box($xoffset, $yoffset, $rounded-corners, $border-color) {
+  box-shadow: $xoffset $yoffset 5px $ink;
+  border-radius: $rounded-corners;
+  border: 3px solid $border-color;
+}

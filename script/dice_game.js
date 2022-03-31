@@ -93,11 +93,11 @@ document.getElementById('buttonRoll').addEventListener('click', function () {
   if (rollCount == 3) {
     //Display game results
     if (playerOneTotal > playerTwoTotal) {
-      document.getElementById('winner').innerHTML = "The <span>Player</span> has won the game"
+      document.getElementById('winner').innerHTML = "The <span>Player</span> won the game"
     } else if (playerOneTotal == playerTwoTotal) {
-      document.getElementById('winner').innerHTML = "This game has ended in a tie"
+      document.getElementById('winner').innerHTML = "This game ended in a tie"
     } else {
-      document.getElementById('winner').innerHTML = "The <span>Computer</span> has won the game"
+      document.getElementById('winner').innerHTML = "The <span>Computer</span> won the game"
     }
     document.getElementById('playerScore').innerText = playerOneTotal;
     document.getElementById('computerScore').innerText = playerTwoTotal;

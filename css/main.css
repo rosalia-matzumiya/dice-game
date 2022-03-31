@@ -1166,6 +1166,22 @@ body {
     margin: 0;
   }
 }
+#game--board .round {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-weight: 300;
+  margin: 1rem;
+  font-family: "VT323", monospace;
+  color: #5A5A5A;
+}
+@media screen and (max-width: 799px) {
+  #game--board .round {
+    font-size: 1rem;
+    margin: 0;
+  }
+}
 #game--board .score {
   font-size: 8rem;
   font-weight: 300;

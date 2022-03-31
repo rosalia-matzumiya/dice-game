@@ -13,6 +13,7 @@ var playerTwoTotal = 0;
 var playerOneRoundTotal = 0;
 var playerTwoRoundTotal = 0;
 var dice = [];
+
 for (i = 0; i < 6; i++) {
   dice[i] = {
     value: i + 1,

@@ -193,7 +193,7 @@ body {
 #how-to-play,
 #rules {
     .headlineTitle {
-        font-size: 6vw;
+        font-size: 4vw;
         font-family: $font-04;
         font-weight: 800;
     }
@@ -201,7 +201,7 @@ body {
     .headlineDesc {
         padding: 10px;
         font-family: $font-05;
-        font-size: 2.5vw;
+        font-size: 1.7vw;
     }
 
     .list {
@@ -359,6 +359,7 @@ body {
             }
 
             h4 {
+                font-size: 4vw;
                 text-align: center;
                 transform: skewY(-10deg);
                 letter-spacing: 4px;
@@ -385,17 +386,6 @@ body {
                     transform: skewY(0deg);
                     font-size: 5vw;
                     width: 100%;
-                }
-
-                span {
-                    display: inline-block;
-                    text-shadow: none;
-                    -webkit-animation: rotate linear infinite 7s;
-                    animation: rotate linear infinite 7s;
-
-                    @include sm {
-                        display: none;
-                    }
                 }
             }
 
@@ -663,8 +653,7 @@ body {
 
                 @include sm {
                     max-width: 400px;
-                    margin: auto;
-                    margin-top: 60px;
+                    margin: 20%;
                 }
 
                 .headline {
@@ -746,12 +735,7 @@ body {
                             display: block;
 
                             @include sm {
-                                font-size: 4.5vw;
-                            }
-
-                            @include sm {
-                                //    transform: skewY(0deg);
-                                //    padding: 5px 0px 0px 20%;
+                                font-size: 7.5vw;
                             }
 
                             span {
@@ -945,7 +929,7 @@ body {
 
 #game {
     &--board {
-        background: linear-gradient(-45deg, #7138ef, #5ef8a3, #9941eb, #6821ea, #fda402, #ff4500, #ffb632);
+        background: linear-gradient(-45deg, $lg-01, $lg-04, $lg-02, $m-01, $m-00, $lg-05, $lg-03);
         background-size: 400% 400%;
         animation: change 20s ease-in-out infinite;
         height: 100vh;
@@ -1020,14 +1004,14 @@ body {
         }
 
         footer {
-            width: 100vw;
-            position: fixed;
+            width: 100%;
             bottom: 0;
             display: flex;
             height: 40px;
             justify-content: center;
             align-items: center;
             left: 0;
+            font-family: $font-05;
 
             p {
                 text-align: center;
@@ -1040,6 +1024,61 @@ body {
             @include xs {
                 display: none;
             }
+        }
+
+        .mainLogo {
+            display: flex;
+            align-items: center;
+            padding: 0 30px;
+            color: $m-01;
+            text-transform: uppercase;
+            font-family: $font-03;
+
+            @include sm {
+                width: auto;
+                padding: 0 5vw;
+                font-size: 20px;
+                margin: auto;
+            }
+
+            h4 {
+                width: 100%;
+                font-size: 4vw;
+                text-align: center;
+                letter-spacing: 4px;
+                word-spacing: -8px;
+                color: $lg-01;
+                text-shadow:
+                    -1px -1px 0 $lg-02,
+                    -2px -2px 0 $lg-02,
+                    -3px -3px 0 $lg-05,
+                    -4px -4px 0 $lg-02,
+                    -5px -5px 0 $lg-04,
+                    -6px -6px 0 $lg-04,
+                    -7px -7px 0 $lg-03,
+                    -8px -8px 0 $lg-03,
+                    -30px 20px 40px dimgrey;
+
+                @include lg {
+                    font-size: 4vw;
+                    width: 100%;
+
+                }
+
+                @include sm {
+                    font-size: 5vw;
+                    width: 100%;
+                }
+
+                span {
+                    display: inline-block;
+                    text-shadow: none;
+                    -webkit-animation: rotate linear infinite 7s;
+                    animation: rotate linear infinite 7s;
+                }
+            }
+
+
         }
 
         .player {
@@ -1198,13 +1237,13 @@ body {
             line-height: 22px;
             text-align: center;
             border-radius: 6px;
-            color: white;
+            color: $neu-06;
             letter-spacing: 0.5px;
             font-family: $font-04;
             transition: transform 0.2s ease, box-shadow 0.2s ease;
             cursor: pointer;
             border: none;
-            font-size: 1.5rem;
+            font-size: 1.10rem;
             text-transform: uppercase;
             font-weight: 400;
             margin-bottom: 50px;
@@ -1249,14 +1288,7 @@ body {
                 }
             }
         }
-
-
-
-
     }
-
-    //--end game--board
-
 
     @keyframes change {
         0% {
@@ -1273,5 +1305,4 @@ body {
 
 
     }
-
 }

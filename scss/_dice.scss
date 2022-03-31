@@ -1,80 +1,110 @@
-
 // Dice design
-#dice .cover, #dice .inner {
+#dice .cover,
+#dice .inner {
     background: #e0e0e0;
     box-shadow: none;
 }
+
 #dice .cover {
     border-radius: 0;
 }
+
 #dice .cover.x {
     transform: rotateY(90deg);
 }
+
 #dice .cover.z {
     transform: rotateX(90deg);
 }
-#dice .front  {
+
+#dice .front {
     transform: translateZ(100px);
 }
-#dice .front.inner  {
+
+#dice .front.inner {
     transform: translateZ(99px);
 }
+
 #dice .back {
     transform: rotateX(-180deg) translateZ(100px);
 }
+
 #dice .back.inner {
     transform: rotateX(-180deg) translateZ(99px);
 }
+
 #dice .sright {
     transform: rotateY(90deg) translateZ(100px);
 }
+
 #dice .sright.inner {
     transform: rotateY(90deg) translateZ(99px);
 }
+
 #dice .sleft {
     transform: rotateY(-90deg) translateZ(100px);
 }
+
 #dice .sleft.inner {
     transform: rotateY(-90deg) translateZ(99px);
 }
+
 #dice .top {
     transform: rotateX(90deg) translateZ(100px);
 }
+
 #dice .top.inner {
     transform: rotateX(90deg) translateZ(99px);
 }
+
 #dice .bottom {
     transform: rotateX(-90deg) translateZ(100px);
 }
+
 #dice .bottom.inner {
     transform: rotateX(-90deg) translateZ(99px);
 }
+
 .dot {
-    position:absolute;
-    width:46px;
-    height:46px;
-    border-radius:23px;
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    border-radius: 23px;
     background: $neu-01;
-    box-shadow:inset 5px 0 10px #000;
+    box-shadow: inset 5px 0 10px #000;
 }
+
 .dot.center {
-    margin:77px 0 0 77px;
+    margin: 77px 0 0 77px;
 }
+
+.side.front .dot.center {
+
+    &:nth-child(1) {
+        background: $lg-05;
+    }
+}
+
 .dot.dtop {
-    margin-top:20px;
+    margin-top: 20px;
 }
+
 .dot.dleft {
-    margin-left:134px;
+    margin-left: 134px;
 }
+
 .dot.dright {
-    margin-left:20px;
+    margin-left: 20px;
 }
+
 .dot.dbottom {
-    margin-top:134px;
+    margin-top: 134px;
 }
+
 .dot.center.dleft {
-    margin:77px 0 0 20px;
+    margin: 77px 0 0 20px;
 }
+
 .dot.center.dright {
-    margin:77px 0 0 134px;
+    margin: 77px 0 0 134px;
 }

@@ -1,4 +1,12 @@
 //Define variables
+const dice1 = document.getElementById('dice1');
+const dice2 = document.getElementById('dice2');
+const dice3 = document.getElementById('dice3');
+const dice4 = document.getElementById('dice4');
+const dempty1 = document.getElementById('dempty1');
+const dempty2 = document.getElementById('dempty2');
+const dempty3 = document.getElementById('dempty3');
+const dempty4 = document.getElementById('dempty4');
 var rollCount = 0;
 var playerOneTotal = 0;
 var playerTwoTotal = 0;
@@ -71,6 +79,15 @@ document.getElementById('buttonRoll').addEventListener('click', function () {
   document.getElementById('playerTwoTotal').innerText = playerTwoTotal;
   document.getElementById('rollNumber').innerText = rollCount;
   document.getElementById('rollNumber2').innerText = rollCount;
+
+  dice1.style.display = "block";
+  dice2.style.display = "block";
+  dice3.style.display = "block";
+  dice4.style.display = "block";
+  dempty1.style.display = "none";
+  dempty2.style.display = "none";
+  dempty3.style.display = "none";
+  dempty4.style.display = "none";
 
   //Check to see if game is complete
   if (rollCount == 3) {

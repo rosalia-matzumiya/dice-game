@@ -1082,13 +1082,30 @@ body {
 }
 #game--board .player .dice--container {
   display: flex;
+  flex-direction: row;
+}
+#game--board .player .dice--container > {
+  flex: 1 0 50%;
+}
+#game--board .player .dice--container:first-child {
+  flex: 0 1 50%;
 }
 #game--board .player .dice--pair {
   height: 5rem;
   margin: 10px;
+  display: none;
 }
 @media screen and (max-width: 512px) {
   #game--board .player .dice--pair {
+    height: 2.5rem;
+  }
+}
+#game--board .player .dice--empty {
+  height: 7.5rem;
+  margin: 10px;
+}
+@media screen and (max-width: 512px) {
+  #game--board .player .dice--empty {
     height: 2.5rem;
   }
 }

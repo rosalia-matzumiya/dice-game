@@ -777,9 +777,7 @@ body {
                     }
                 }
 
-                // Product Specs
                 .specs {
-                    // display: flex;
                     margin-bottom: 60px;
 
                     @include sm {
@@ -788,8 +786,6 @@ body {
 
                     .formContent {
                         top: 5%;
-                        // position: absolute;
-                        // font-family: "Open Sans", sans-serif;
                         display: flex;
                         margin: 10px;
 
@@ -906,7 +902,6 @@ body {
                         margin: 10px;
 
                         .secondWord {
-                            // font-family: "Open Sans", sans-serif;
                             font-weight: bold;
                             font-size: 38px;
                             letter-spacing: 1.92px;
@@ -1053,11 +1048,33 @@ body {
             .dice {
                 &--container {
                     display: flex;
+                    flex-direction: row;
+
+                    > {
+                        flex: 1 0 50%;
+                    }
+
+                    &:first-child {
+                        flex: 0 1 50%;
+                    }
                 }
+
+
 
                 &--pair {
                     height: 5rem;
                     margin: 10px;
+                    display: none;
+
+                    @include xs {
+                        height: 2.5rem;
+                    }
+                }
+
+                &--empty {
+                    height: 7.5rem;
+                    margin: 10px;
+
 
                     @include xs {
                         height: 2.5rem;

@@ -1019,6 +1019,29 @@ body {
             }
         }
 
+        footer {
+            width: 100vw;
+            position: fixed;
+            bottom: 0;
+            display: flex;
+            height: 40px;
+            justify-content: center;
+            align-items: center;
+            left: 0;
+
+            p {
+                text-align: center;
+                width: 100%;
+                color: $neu-06;
+                font-size: 1.25em;
+                text-shadow: 1.5px 1.5px $neu-02;
+            }
+
+            @include xs {
+                display: none;
+            }
+        }
+
         .player {
             flex: 50%;
             text-align: center;
@@ -1177,11 +1200,11 @@ body {
             border-radius: 6px;
             color: white;
             letter-spacing: 0.5px;
-            font-family: $font-05;
+            font-family: $font-04;
             transition: transform 0.2s ease, box-shadow 0.2s ease;
             cursor: pointer;
             border: none;
-            font-size: 1rem;
+            font-size: 1.5rem;
             text-transform: uppercase;
             font-weight: 400;
             margin-bottom: 50px;
@@ -1189,6 +1212,10 @@ body {
 
             @include sm {
                 font-size: 0.6rem;
+            }
+
+            &::first-letter {
+                font-size: 1.25rem;
             }
 
             &:hover {

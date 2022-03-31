@@ -4,8 +4,6 @@ var playerOneTotal = 0;
 var playerTwoTotal = 0;
 var playerOneRoundTotal = 0;
 var playerTwoRoundTotal = 0;
-
-//Define dice attributes
 var dice = [];
 for (i = 0; i < 6; i++) {
   dice[i] = {
@@ -22,12 +20,12 @@ function rollDice() {
     diceRoll[i] = {
       img: dice[rollDie()]
     }
-    //Output Dice Roll
+
     document.getElementById('dice' + i).setAttribute('src', diceRoll[i].img.src)
   }
-  //Calculate Player 1 Round Score
+  //Calculate Round Score for player
   playerOneRoundTotal = calculateScore(diceRoll[1].img.value, diceRoll[2].img.value);
-  //Calculate Computer Round Score
+  //Calculate Round Score for computer
   playerTwoRoundTotal = calculateScore(diceRoll[3].img.value, diceRoll[4].img.value);
 
   return (playerOneRoundTotal, playerTwoRoundTotal);
@@ -44,12 +42,9 @@ function calculateScore(value1, value2) {
   //Check to see if die have the value of 1
   if (value1 == 1 || value2 == 1) {
     return roundScore = 0;
-    //Die doesnt have value of 1
   } else {
-    //Do the dice equal each other
     if (value1 == value2) {
       return roundScore = (value1 + value2) * 2;
-      //They dont equal, add the dice together for round score
     } else {
       return roundScore = value1 + value2;
     }

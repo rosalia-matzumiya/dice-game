@@ -328,7 +328,7 @@ body {
 
         &.fixed {
             background-color: rgba($neu-03, 0.1);
-            box-shadow: 00;
+            box-shadow: none;
 
             @include sm {
                 background-color: rgba(white, 0.9);
@@ -509,7 +509,7 @@ body {
             font-weight: 400;
             text-align: center;
             color: #f0f0f0;
-            letter-spacing: 1.1;
+            letter-spacing: 1px;
 
             &:first-child {
                 color: white;
@@ -1005,7 +1005,7 @@ body {
             max-height: 40rem;
             background-color: rgba(255, 255, 255, 0.35);
             backdrop-filter: blur(200px);
-            filter: blur();
+            filter: blur(0);
             box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
             border-radius: 9px;
             overflow: hidden;

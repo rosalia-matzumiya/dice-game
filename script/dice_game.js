@@ -17,7 +17,7 @@ var dice = [];
 for (i = 0; i < 6; i++) {
   dice[i] = {
     value: i + 1,
-    src: '../img/dice-game/dice-' + (i + 1) + '.png'
+    src: 'img/dice-game/dice-' + (i + 1) + '.png'
   }
 }
 
